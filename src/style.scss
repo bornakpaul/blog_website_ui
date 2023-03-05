@@ -10,7 +10,15 @@ $Black : #212529;
 
 
 .app{
+     display: flex;
+     justify-content: center;
      .container{
+          width: 1024px;
+
+          .link{
+               text-decoration: none;
+               color: inherit;
+          }
           // Login & Register
 
           .auth{
@@ -62,6 +70,66 @@ $Black : #212529;
                     text-align: center;
                }
 
+          }
+
+          // NAVBAR
+
+          .navbar {
+               .container{
+                    padding: 10px 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .logo{
+                         img{
+                              width: 150px;
+                         }
+                    }
+                    .links{
+                         display: flex;
+                         align-items: center;
+                         gap: 10px;
+                    }
+
+                    h2{
+                         font-size: 16px;
+                         font-weight: 300;
+                    }
+
+                    span{
+                         cursor: pointer;
+                    }
+
+                    .write{
+                         background-color: $lighterGrey;
+                         width: 60px;
+                         height: 60px;
+                         border-radius: 50%;
+                         display: flex;
+                         justify-content: center;
+                         align-items: center;
+                         font-weight: 300;
+
+                         &:hover{
+                              color: white;
+                              background-color: $lightBlack;
+                         }
+                    }
+               }
+          }
+
+          // footer
+
+          footer{
+               margin-top: 100px;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               background-color: $lightestGrey;
+               font-size: 12px;
+               img{
+                    height: 100px;
+               }
           }
      }
 }
