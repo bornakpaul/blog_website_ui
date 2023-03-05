@@ -1,5 +1,67 @@
+$lightestGrey : #f8f9fa;
+$lighterGrey : #e9ecef;
+$lightGrey: #dee2e6;
+$Grey : #ced4da;
+$darkGrey : #adb5bd;
+$darkerGrey : #6c757d;
+$darkestGrey : #495057;
+$lightBlack : #343a40;
+$Black : #212529;
+
+
 .app{
      .container{
           // Login & Register
+
+          .auth{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               height: 100vh;
+               background-color: white;
+          }
+
+          h1{
+               font-size: 30px;
+               color: $darkestGrey;
+               margin-bottom: 20px;
+          }
+
+          form{
+               display: flex;
+               flex-direction: column;
+               padding: 50px;
+               background-color: $lightestGrey;
+               width: 200px;
+               gap: 20px;
+
+               input{
+                    padding: 10px;
+                    border: none;
+                    background-color:$lightestGrey;
+                    border-bottom: 1px solid $darkerGrey;
+               }
+
+               button{
+                    padding: 10px;
+                    border: none;
+                    background-color: $darkestGrey;
+                    color: white;
+                    cursor: pointer;
+               }
+
+               p{
+                    font-size: 12px;
+                    color: red;
+                    text-align: center;
+               }
+
+               span {
+                    font-size: 12px;
+                    text-align: center;
+               }
+
+          }
      }
 }
